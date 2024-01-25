@@ -1,5 +1,5 @@
 # Touch Simulator For Unity
-Simulate multi-touch using mouse in Unity Editor.
+Simulate multi-touch using mouse in Unity Editor. `TouchSimulator` allows mouse left click and right click to send Vector2 data needed to simulate a pinch input in a smarthphone screen.
 
 ![Alt Text](TouchSimulator.gif)
 
