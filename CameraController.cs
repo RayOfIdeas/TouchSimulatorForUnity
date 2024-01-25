@@ -123,14 +123,16 @@ namespace TouchSimulatorForUnity
 
         void ConstrainPosition()
         {
-            var aspectRatio = Screen.height / Screen.width;
+            var aspectRatio = (float)Screen.width / Screen.height;
+
             var maxPos = new Vector2(
-                borderRight.position.x - Camera.main.orthographicSize / 2,
-                borderTop.position.y - (Camera.main.orthographicSize / 2 * aspectRatio)
+                borderRight.position.x - Camera.main.orthographicSize * aspectRatio,
+                borderTop.position.y - Camera.main.orthographicSize
                 );
+
             var minPos = new Vector2(
-                borderLeft.position.x + Camera.main.orthographicSize / 2,
-                borderBottom.position.y + (Camera.main.orthographicSize / 2 * aspectRatio)
+                borderLeft.position.x + Camera.main.orthographicSize * aspectRatio,
+                borderBottom.position.y + Camera.main.orthographicSize
                 );
 
             Camera.main.transform.position = new(
