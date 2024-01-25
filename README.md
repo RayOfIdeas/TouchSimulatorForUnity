@@ -17,7 +17,7 @@ This script is using Unity's InputSystem package.
         └ Touch
             └ Primary
             └ Secondary
-    You may want to add `Image` component to see them.
+    Add `Image` component to those empty gameObjects, so you can see their position.
 
 6. In `TouchSimulator`, assign Touch to `Touch` field, Primary to `Pinch Primary`, and Secondary to `Pinch Secondary`.
 7. Subscribe to any of `TouchSimulator`'s delegates:
